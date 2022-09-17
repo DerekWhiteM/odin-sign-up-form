@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Norse Bold';
+    src: url('../fonts/Norse-Bold.otf');
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 33% auto;
+    height: 100%;
+}
+
+#sidebar {
+    background-image: url('../images/tennis.jpg');
+    background-position: center left;
+    background-size: cover;
+    font-family: 'Norse Bold';
+}
+
+#logo {
+    color: white;
+    display: flex;
+    margin: auto;
+    height: 6rem;
+    justify-content: center;
+    position: relative;
+    top: 14%;
+    background-color: rgb(0,0,0, .3);
+    padding: 10px 0 10px 0;
+}
+
+#logo h1 {
+    font-size: 5rem;
+    align-self: center;
+}
+
+#sign-up-form {
+    background-color:rgba(245, 245, 245, 0.884);
+    display: flex;
+    align-items: center;
+}
+
+#top-section > p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.1;
+    padding: 0 60px 0 60px;
+}
+
+#sign-up-form p span {
+    font-style: italic;
+}
+
+#input-section {
+    background-color: white;
+    padding: 30px 60px 35px 60px;
+    margin-top: 60px;
+    box-shadow: 0 5px 10px lightgray;
+}
+
+#input-section h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#input-section > div {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 30px;
+    max-width: 600px;
+}
+
+#input-section > div > div {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+
+label {
+    text-transform: uppercase;
+    font-size: .75rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input {
+    border-radius: 4px;
+    border: 1px solid rgba(211, 211, 211, 0.65);
+    padding: 5px;
+    font-size: 1rem;
+}
+
+input:focus {
+    box-shadow: 3px 3px 10px lightgray;
+}
+
+#bottom-section {
+    margin: 35px 60px 0 60px;
+}
+
+button {
+    background-color: rgb(65, 113, 184);
+    color: white;
+    padding: 15px 40px 15px 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(40, 97, 184);
+}
+
+.error {
+    border-color: rgb(220, 0, 0);
+}
+
+.error:focus {
+    outline: solid rgb(220, 0, 0) 1px;
+}
