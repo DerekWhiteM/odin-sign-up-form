@@ -135,3 +135,11 @@ a {
 .error:focus {
     outline: solid rgb(220, 0, 0) 1px;
 }
+
+#input-section > div::after {
+    content: attr(data-message);
+    width: max-content;
+    margin: -18px 0 0 0;
+    color: rgb(220, 0, 0);
+    font-size: .75rem;
+}

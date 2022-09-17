@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
     <title>Sign Up</title>
 </head>
 <body>
@@ -36,7 +37,7 @@
                 
                 <div id="input-section">
                     <h2>Let's do this!</h2>
-                    <div>
+                    <div data-message="* Passwords do not match">
                         <div>
                             <label for="firstName">First Name</label>
                             <input type="text" name="firstName" required>
@@ -55,17 +56,17 @@
                         </div>
                         <div>
                             <label for="password">Password</label>
-                            <input type="password" name="password" class="error" required>
+                            <input type="password" name="password" id="password" class="error" minlength="8" required>
                         </div>
                         <div>
                             <label for="confirmPassword">Confirm Password</label>
-                            <input type="password" name="confirmPassword" class="error" required>
+                            <input type="password" name="confirmPassword" id="confirmPassword" class="error" required>
                         </div>
                     </div>
                 </div>
 
                 <div id="bottom-section">
-                    <button type="submit">Create Account</button>
+                    <button type="submit" id="submit">Create Account</button>
                     <div>
                         Already have an account?
                         <a href="#">Log in</a>
